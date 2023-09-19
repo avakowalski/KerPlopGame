@@ -3,26 +3,27 @@ package levelPieces;
 import gameEngine.Drawable;
 import gameEngine.InteractionResult;
 
-public class Ghost extends GamePiece{
-	
-	public Ghost(char symbol, String label, int location) {
-		super('G', "Ghost", location);
+public class CompOrgMonster extends GamePiece{
+
+	public CompOrgMonster(char symbol, String label, int location) {
+		super('C', "Comp Org Monster", location);
 		// TODO Auto-generated constructor stub
 	}
 	
 	@Override
 	public String toString() {
-		return "G - Ghost flys around and hits people.";
+		return "C - You have been brutally murdered by the Comp Org Monster, you also made a "
+				+ "big ole fat ZERO on your latest quiz.";
 	}
-
+	
+	@Override
 	public InteractionResult interact(Drawable[] gameBoard, int playerLocation) {
 		// TODO Auto-generated method stub
 		if(this.getLocation() == playerLocation) {
 			gameBoard[playerLocation] = null;
-			return InteractionResult.GET_POINT;
+			return InteractionResult.KILL;
 		} else {
 			return InteractionResult.NONE;
 		}
 	}
-
 }
