@@ -1,10 +1,21 @@
-package gameEngine;
+package levelPieces;
 
 import java.util.ArrayList;
 
-import levelPieces.GamePiece;
+import gameEngine.Drawable;
+
 
 public class LevelSetup {
+	
+	public static void level1() {
+        // Create game pieces for level 1
+       
+    }
+
+    public static void level2() {
+        // Create game pieces for level 2
+        
+    }
 
 	public void createLevel(int levelNum) {
 		// TODO Auto-generated method stub
@@ -32,3 +43,13 @@ public class LevelSetup {
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
