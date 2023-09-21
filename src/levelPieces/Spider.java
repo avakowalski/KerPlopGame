@@ -3,7 +3,7 @@ package levelPieces;
 import gameEngine.Drawable;
 import gameEngine.InteractionResult;
 
-public class Spider {
+public class Spider implements Drawable{
 	//spider doesnt do anything 
 	//spider just sits there 
 	//as we can see via the output 
